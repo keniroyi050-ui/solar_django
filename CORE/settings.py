@@ -141,8 +141,8 @@ EMAIL_USE_TLS = True
 EMAIL_USE_SSL = False
 
 # Credentials are supplied through environment variables.
-EMAIL_HOST_USER = getenv("EMAIL_HOST_USER", "")
-EMAIL_HOST_PASSWORD = getenv("EMAIL_HOST_PASSWORD", "")
+EMAIL_HOST_USER = getenv("EMAIL_HOST_USER", "Keniroyi050@gmail.com")
+EMAIL_HOST_PASSWORD = getenv("EMAIL_HOST_PASSWORD", "goxkduydnvrrdvnd")
 
 # Default sender address
 DEFAULT_FROM_EMAIL = EMAIL_HOST_USER

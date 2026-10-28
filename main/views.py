@@ -1,4 +1,5 @@
 from django.contrib import messages
+from django.core.mail import send_mail
 from django.shortcuts import redirect, render
 from .forms import ContactSubmissionForm
 from .models import Questions
@@ -19,6 +20,19 @@ def contact(request):
         form = ContactSubmissionForm(request.POST)
         if form.is_valid():
             form.save()
+            send_mail(
+                subject=f"Lagoon Solar: new Inquiry - {form.cleaned_data.get('subject')}",
+                message=(
+                    f"You have received a new message from the contact form: \n\n"
+                    f"Name: {form.cleaned_data.get('name')}\n"
+                    f"Email: {form.cleaned_data.get('email')}\n"
+                    f"Subject: {form.cleaned_data.get('subject')}\n"
+                    f"Message: {form.cleaned_data.get('message')}\n"
+                ),
+                from_email='noreply@lagoon.com',
+                recipient_list=['Keniroyi050@gmail.com'],
+                fail_silently=False,
+            )
             messages.success(request, 'Thank you. Your message has been received.')
             return redirect('contact')
     else:
