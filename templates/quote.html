@@ -1,0 +1,62 @@
+{% extends "base.html" %}
+
+{% load static %}
+
+{% block content %}
+<!-- Page Header Start -->
+<div class="container-fluid page-header py-5 mb-5">
+<div class="container py-5">
+<h1 class="display-3 text-white mb-3 animated slideInDown">Request a Solar Plan</h1>
+<nav aria-label="breadcrumb animated slideInDown">
+<ol class="breadcrumb">
+<li class="breadcrumb-item"><a class="text-white" href="{% url 'home' %}">Home</a></li>
+<li class="breadcrumb-item"><a class="text-white" href="{% url 'home' %}">Pages</a></li>
+<li aria-current="page" class="breadcrumb-item text-white active">Request a Solar Plan</li>
+</ol>
+</nav>
+</div>
+</div>
+<!-- Page Header End -->
+<!-- Quote Start -->
+<div class="container-fluid bg-light overflow-hidden px-lg-0" style="margin: 6rem 0;">
+<div class="container quote px-lg-0">
+<div class="row g-0 mx-lg-0">
+<div class="col-lg-6 ps-lg-0 wow fadeIn" data-wow-delay="0.1s" style="min-height: 400px;">
+<div class="position-relative h-100">
+<img alt="Rooftop solar panels on a Nigerian home" class="position-absolute img-fluid w-100 h-100" data-local-fallback="img/quote.jpg" decoding="async" loading="lazy" src="https://commons.wikimedia.org/wiki/Special:FilePath/Sun_empowers_solar_panels.jpg?width=1280" style="object-fit: cover;"/>
+</div>
+</div>
+<div class="col-lg-6 quote-text py-5 wow fadeIn" data-wow-delay="0.5s">
+<div class="p-lg-5 pe-lg-0">
+<h6 class="text-primary">Request a Solar Plan</h6>
+<h1 class="mb-4">Let’s build a power plan around your budget</h1>
+<p class="mb-4 pb-2">Tell us your location and what you need to power. We’ll help you outline a sensible solar, inverter or battery setup—without confusing jargon.</p>
+<form class="solar-request-form" data-demo-form="quote" method="post">
+<div class="row g-3">
+<div class="col-12 col-sm-6">
+<input autocomplete="name" class="form-control border-0" name="name" placeholder="Your Name" required="required" style="height: 55px;" type="text"/>
+</div>
+<div class="col-12 col-sm-6">
+<input autocomplete="email" class="form-control border-0" name="email" placeholder="Your Email" required="required" style="height: 55px;" type="email"/>
+</div>
+<div class="col-12 col-sm-6">
+<input autocomplete="tel" class="form-control border-0" name="phone" placeholder="Phone (e.g. 080...)" required="required" style="height: 55px;" type="tel"/>
+</div>
+<div class="col-12 col-sm-6">
+<select class="form-select border-0" name="service" required="required" style="height: 55px;"><option disabled="disabled" selected="selected" value="">Select a service</option><option value="Home solar">Home solar installation</option><option value="Inverter">Inverter &amp; backup power</option><option value="Battery">Lithium battery upgrade</option><option value="Business">Business solar</option><option value="Maintenance">Maintenance</option><option value="Assessment">Load assessment</option></select>
+</div>
+<div class="col-12">
+<textarea class="form-control border-0" name="message" placeholder="Tell us the appliances and number of hours you need power" rows="4"></textarea>
+</div>
+<div class="col-12">
+<button class="btn btn-primary rounded-pill py-3 px-5" type="submit">Prepare Enquiry</button>
+</div>
+</div>
+<p aria-live="polite" class="form-feedback small mt-3" role="status">Demo: opens an email draft; replace the sample contact details before publishing.</p></form>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Quote End -->
+{% endblock %}

@@ -1,0 +1,227 @@
+{% extends "base.html" %}
+
+{% load static %}
+
+{% block content %}
+<!-- Page Header Start -->
+<div class="container-fluid page-header py-5 mb-5">
+<div class="container py-5">
+<h1 class="display-3 text-white mb-3 animated slideInDown">Our Solar Services</h1>
+<nav aria-label="breadcrumb animated slideInDown">
+<ol class="breadcrumb">
+<li class="breadcrumb-item"><a class="text-white" href="{% url 'home' %}">Home</a></li>
+<li class="breadcrumb-item"><a class="text-white" href="{% url 'home' %}">Pages</a></li>
+<li aria-current="page" class="breadcrumb-item text-white active">Our Solar Services</li>
+</ol>
+</nav>
+</div>
+</div>
+<!-- Page Header End -->
+<!-- Service Start -->
+<div class="container-xxl py-5">
+<div class="container">
+<div class="text-center mx-auto mb-5 wow fadeInUp" data-wow-delay="0.1s" style="max-width: 600px;">
+<h6 class="text-primary">What We Do</h6>
+<h1 class="mb-4">A better power plan for every kind of space</h1>
+</div>
+<div class="row g-4">
+<div class="col-md-6 col-lg-4 wow fadeInUp" data-wow-delay="0.1s">
+<div class="service-item rounded overflow-hidden">
+<img alt="Residential Solar – illustrative solar power photography" class="img-fluid" data-local-fallback="img/img-600x400-1.jpg" decoding="async" loading="lazy" src="https://commons.wikimedia.org/wiki/Special:FilePath/Wavetra_solar_installation.jpg?width=1280"/>
+<div class="position-relative p-4 pt-0">
+<div class="service-icon">
+<i class="fa fa-home fa-3x"></i>
+</div>
+<h4 class="mb-3">Residential Solar</h4>
+<p>A tailored solar-and-inverter setup for your flat, duplex or family home. Keep essential appliances running when the grid goes out.</p>
+<a class="small fw-medium" href="{% url 'quote' %}">Discuss this service <i class="fa fa-arrow-right ms-2"></i></a>
+</div>
+</div>
+</div>
+<div class="col-md-6 col-lg-4 wow fadeInUp" data-wow-delay="0.3s">
+<div class="service-item rounded overflow-hidden">
+<img alt="Inverter &amp; Backup Power – illustrative solar power photography" class="img-fluid" data-local-fallback="img/img-600x400-2.jpg" decoding="async" loading="lazy" src="https://commons.wikimedia.org/wiki/Special:FilePath/Sun_empowers_solar_panels.jpg?width=1280"/>
+<div class="position-relative p-4 pt-0">
+<div class="service-icon">
+<i class="fa fa-bolt fa-3x"></i>
+</div>
+<h4 class="mb-3">Inverter &amp; Backup Power</h4>
+<p>Quiet backup systems sized around your actual electricity use, from lights and Wi-Fi to TVs, freezers and workstations.</p>
+<a class="small fw-medium" href="{% url 'quote' %}">Discuss this service <i class="fa fa-arrow-right ms-2"></i></a>
+</div>
+</div>
+</div>
+<div class="col-md-6 col-lg-4 wow fadeInUp" data-wow-delay="0.5s">
+<div class="service-item rounded overflow-hidden">
+<img alt="Lithium Battery Upgrades – illustrative solar power photography" class="img-fluid" data-local-fallback="img/img-600x400-3.jpg" decoding="async" loading="lazy" src="https://commons.wikimedia.org/wiki/Special:FilePath/Solar_Pannel_Installer.jpg?width=1280"/>
+<div class="position-relative p-4 pt-0">
+<div class="service-icon">
+<i class="fa fa-battery-full fa-3x"></i>
+</div>
+<h4 class="mb-3">Lithium Battery Upgrades</h4>
+<p>Make more of your stored energy with battery choices designed around runtime, safety and future expansion.</p>
+<a class="small fw-medium" href="{% url 'quote' %}">Discuss this service <i class="fa fa-arrow-right ms-2"></i></a>
+</div>
+</div>
+</div>
+<div class="col-md-6 col-lg-4 wow fadeInUp" data-wow-delay="0.1s">
+<div class="service-item rounded overflow-hidden">
+<img alt="Solar for Shops &amp; SMEs – illustrative solar power photography" class="img-fluid" data-local-fallback="img/img-600x400-4.jpg" decoding="async" loading="lazy" src="https://commons.wikimedia.org/wiki/Special:FilePath/Solar-panel-on-the-roof-of-an-ancient-house-in-abeokuta.jpg?width=1280"/>
+<div class="position-relative p-4 pt-0">
+<div class="service-icon">
+<i class="fa fa-store fa-3x"></i>
+</div>
+<h4 class="mb-3">Solar for Shops &amp; SMEs</h4>
+<p>Better power continuity for salons, retail shops, pharmacies, offices and other growing Nigerian businesses.</p>
+<a class="small fw-medium" href="{% url 'quote' %}">Discuss this service <i class="fa fa-arrow-right ms-2"></i></a>
+</div>
+</div>
+</div>
+<div class="col-md-6 col-lg-4 wow fadeInUp" data-wow-delay="0.3s">
+<div class="service-item rounded overflow-hidden">
+<img alt="System Maintenance – illustrative solar power photography" class="img-fluid" data-local-fallback="img/img-600x400-5.jpg" decoding="async" loading="lazy" src="https://commons.wikimedia.org/wiki/Special:FilePath/Solar_panel_installer.jpg?width=1280"/>
+<div class="position-relative p-4 pt-0">
+<div class="service-icon">
+<i class="fa fa-tools fa-3x"></i>
+</div>
+<h4 class="mb-3">System Maintenance</h4>
+<p>Panel cleaning guidance, inspections, fault checks and performance reviews to keep your system in good shape.</p>
+<a class="small fw-medium" href="{% url 'quote' %}">Discuss this service <i class="fa fa-arrow-right ms-2"></i></a>
+</div>
+</div>
+</div>
+<div class="col-md-6 col-lg-4 wow fadeInUp" data-wow-delay="0.5s">
+<div class="service-item rounded overflow-hidden">
+<img alt="Load Assessment &amp; Design – illustrative solar power photography" class="img-fluid" data-local-fallback="img/img-600x400-6.jpg" decoding="async" loading="lazy" src="https://commons.wikimedia.org/wiki/Special:FilePath/Solar_panels_in_Kwara_state_university.jpg?width=1280"/>
+<div class="position-relative p-4 pt-0">
+<div class="service-icon">
+<i class="fa fa-clipboard-check fa-3x"></i>
+</div>
+<h4 class="mb-3">Load Assessment &amp; Design</h4>
+<p>Understand what you can power, how long it can run and what system size fits your budget before you buy.</p>
+<a class="small fw-medium" href="{% url 'quote' %}">Discuss this service <i class="fa fa-arrow-right ms-2"></i></a>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Service End -->
+<!-- Feature Start -->
+<div class="container-fluid bg-light overflow-hidden my-5 px-lg-0">
+<div class="container feature px-lg-0">
+<div class="row g-0 mx-lg-0">
+<div class="col-lg-6 feature-text py-5 wow fadeIn" data-wow-delay="0.1s">
+<div class="p-lg-5 ps-lg-0">
+<h6 class="text-primary">The Lagoon Approach</h6>
+<h1 class="mb-4">Reliable energy starts with the right questions</h1>
+<p class="mb-4 pb-2">We design around the realities of Nigerian electricity: unexpected outages, rising generator fuel costs, hot weather and the appliances your household or business cannot do without.</p>
+<div class="row g-4">
+<div class="col-6">
+<div class="d-flex align-items-center">
+<div class="btn-lg-square bg-primary rounded-circle">
+<i class="fa fa-check text-white"></i>
+</div>
+<div class="ms-4">
+<p class="mb-0">Realistic</p>
+<h5 class="mb-0">Load Planning</h5>
+</div>
+</div>
+</div>
+<div class="col-6">
+<div class="d-flex align-items-center">
+<div class="btn-lg-square bg-primary rounded-circle">
+<i class="fa fa-user-check text-white"></i>
+</div>
+<div class="ms-4">
+<p class="mb-0">Smart</p>
+<h5 class="mb-0">Equipment Choices</h5>
+</div>
+</div>
+</div>
+<div class="col-6">
+<div class="d-flex align-items-center">
+<div class="btn-lg-square bg-primary rounded-circle">
+<i class="fa fa-drafting-compass text-white"></i>
+</div>
+<div class="ms-4">
+<p class="mb-0">Clear</p>
+<h5 class="mb-0">Cost Breakdown</h5>
+</div>
+</div>
+</div>
+<div class="col-6">
+<div class="d-flex align-items-center">
+<div class="btn-lg-square bg-primary rounded-circle">
+<i class="fa fa-headphones text-white"></i>
+</div>
+<div class="ms-4">
+<p class="mb-0">Helpful</p>
+<h5 class="mb-0">Aftercare</h5>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="col-lg-6 pe-lg-0 wow fadeIn" data-wow-delay="0.5s" style="min-height: 400px;">
+<div class="position-relative h-100">
+<img alt="Solar installer on a Nigerian roof; illustrative photo" class="position-absolute img-fluid w-100 h-100" data-local-fallback="img/feature.jpg" decoding="async" loading="lazy" src="https://commons.wikimedia.org/wiki/Special:FilePath/Solar_Pannel_Installer.jpg?width=1280" style="object-fit: cover;"/>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Feature End -->
+<!-- Testimonial Start -->
+<div class="container-xxl py-5">
+<div class="container">
+<div class="text-center mx-auto mb-5 wow fadeInUp" data-wow-delay="0.1s" style="max-width: 600px;">
+<h6 class="text-primary">Power Planning FAQs</h6>
+<h1 class="mb-4">The questions worth asking before you buy</h1>
+</div>
+<div class="owl-carousel testimonial-carousel wow fadeInUp" data-wow-delay="0.1s">
+<div class="testimonial-item text-center">
+<div class="testimonial-img position-relative">
+<img alt="Example of solar installation in Nigeria" class="img-fluid rounded-circle mx-auto mb-5" data-local-fallback="img/testimonial-1.jpg" decoding="async" loading="lazy" src="https://commons.wikimedia.org/wiki/Special:FilePath/Solar-panel-on-the-roof-of-an-ancient-house-in-abeokuta.jpg?width=1280"/>
+<div class="btn-square bg-primary rounded-circle">
+<i class="fa fa-quote-left text-white"></i>
+</div>
+</div>
+<div class="testimonial-text text-center rounded p-4">
+<p>It can, with the right system size and battery planning. We start by checking your AC wattage, how long you want it running and other household loads.</p>
+<h5 class="mb-1">Can solar run my AC?</h5>
+<span class="fst-italic">Solar sizing · Start with your appliances</span>
+</div>
+</div>
+<div class="testimonial-item text-center">
+<div class="testimonial-img position-relative">
+<img alt="Example of solar installation in Nigeria" class="img-fluid rounded-circle mx-auto mb-5" data-local-fallback="img/testimonial-2.jpg" decoding="async" loading="lazy" src="https://commons.wikimedia.org/wiki/Special:FilePath/Sun_empowers_solar_panels.jpg?width=1280"/>
+<div class="btn-square bg-primary rounded-circle">
+<i class="fa fa-quote-left text-white"></i>
+</div>
+</div>
+<div class="testimonial-text text-center rounded p-4">
+<p>Solar panels produce electricity in daylight. A properly sized battery stores energy for use at night or during outages, depending on your system design.</p>
+<h5 class="mb-1">What happens at night?</h5>
+<span class="fst-italic">Battery backup · Night-time power explained</span>
+</div>
+</div>
+<div class="testimonial-item text-center">
+<div class="testimonial-img position-relative">
+<img alt="Example of solar installation in Nigeria" class="img-fluid rounded-circle mx-auto mb-5" data-local-fallback="img/testimonial-3.jpg" decoding="async" loading="lazy" src="https://commons.wikimedia.org/wiki/Special:FilePath/Wavetra_solar_installation.jpg?width=1280"/>
+<div class="btn-square bg-primary rounded-circle">
+<i class="fa fa-quote-left text-white"></i>
+</div>
+</div>
+<div class="testimonial-text text-center rounded p-4">
+<p>There is no one-price-fits-all answer. Your appliances, desired backup hours, roof space and equipment choice decide the system and overall cost.</p>
+<h5 class="mb-1">How much will I need?</h5>
+<span class="fst-italic">Personalised quotes · Avoid buying blindly</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Testimonial End -->
+{% endblock %}

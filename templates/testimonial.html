@@ -1,0 +1,71 @@
+{% extends "base.html" %}
+
+{% load static %}
+
+{% block content %}
+<!-- Page Header Start -->
+<div class="container-fluid page-header py-5 mb-5">
+<div class="container py-5">
+<h1 class="display-3 text-white mb-3 animated slideInDown">Power Planning FAQs</h1>
+<nav aria-label="breadcrumb animated slideInDown">
+<ol class="breadcrumb">
+<li class="breadcrumb-item"><a class="text-white" href="{% url 'home' %}">Home</a></li>
+<li class="breadcrumb-item"><a class="text-white" href="{% url 'home' %}">Pages</a></li>
+<li aria-current="page" class="breadcrumb-item text-white active">Power Planning FAQs</li>
+</ol>
+</nav>
+</div>
+</div>
+<!-- Page Header End -->
+<!-- Testimonial Start -->
+<div class="container-xxl py-5">
+<div class="container">
+<div class="text-center mx-auto mb-5 wow fadeInUp" data-wow-delay="0.1s" style="max-width: 600px;">
+<h6 class="text-primary">Power Planning FAQs</h6>
+<h1 class="mb-4">The questions worth asking before you buy</h1>
+</div>
+<div class="owl-carousel testimonial-carousel wow fadeInUp" data-wow-delay="0.1s">
+<div class="testimonial-item text-center">
+<div class="testimonial-img position-relative">
+<img alt="Example of solar installation in Nigeria" class="img-fluid rounded-circle mx-auto mb-5" data-local-fallback="img/testimonial-1.jpg" decoding="async" loading="lazy" src="https://commons.wikimedia.org/wiki/Special:FilePath/Solar-panel-on-the-roof-of-an-ancient-house-in-abeokuta.jpg?width=1280"/>
+<div class="btn-square bg-primary rounded-circle">
+<i class="fa fa-quote-left text-white"></i>
+</div>
+</div>
+<div class="testimonial-text text-center rounded p-4">
+<p>It can, with the right system size and battery planning. We start by checking your AC wattage, how long you want it running and other household loads.</p>
+<h5 class="mb-1">Can solar run my AC?</h5>
+<span class="fst-italic">Solar sizing · Start with your appliances</span>
+</div>
+</div>
+<div class="testimonial-item text-center">
+<div class="testimonial-img position-relative">
+<img alt="Example of solar installation in Nigeria" class="img-fluid rounded-circle mx-auto mb-5" data-local-fallback="img/testimonial-2.jpg" decoding="async" loading="lazy" src="https://commons.wikimedia.org/wiki/Special:FilePath/Sun_empowers_solar_panels.jpg?width=1280"/>
+<div class="btn-square bg-primary rounded-circle">
+<i class="fa fa-quote-left text-white"></i>
+</div>
+</div>
+<div class="testimonial-text text-center rounded p-4">
+<p>Solar panels produce electricity in daylight. A properly sized battery stores energy for use at night or during outages, depending on your system design.</p>
+<h5 class="mb-1">What happens at night?</h5>
+<span class="fst-italic">Battery backup · Night-time power explained</span>
+</div>
+</div>
+<div class="testimonial-item text-center">
+<div class="testimonial-img position-relative">
+<img alt="Example of solar installation in Nigeria" class="img-fluid rounded-circle mx-auto mb-5" data-local-fallback="img/testimonial-3.jpg" decoding="async" loading="lazy" src="https://commons.wikimedia.org/wiki/Special:FilePath/Wavetra_solar_installation.jpg?width=1280"/>
+<div class="btn-square bg-primary rounded-circle">
+<i class="fa fa-quote-left text-white"></i>
+</div>
+</div>
+<div class="testimonial-text text-center rounded p-4">
+<p>There is no one-price-fits-all answer. Your appliances, desired backup hours, roof space and equipment choice decide the system and overall cost.</p>
+<h5 class="mb-1">How much will I need?</h5>
+<span class="fst-italic">Personalised quotes · Avoid buying blindly</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Testimonial End -->
+{% endblock %}

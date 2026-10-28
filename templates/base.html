@@ -1,0 +1,169 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<title>Lagoon Solar | Solar &amp; Inverter Solutions in Nigeria</title>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<meta content="Nigeria solar installation, Lagos solar panels, inverter, lithium batteries, power backup" name="keywords"/>
+<meta content="Lagoon Solar: solar panels, inverters, lithium batteries and energy planning for homes and businesses in Lagos and across Nigeria. Demo website." name="description"/>
+<!-- Favicon -->
+<link href="{% static 'img/favicon.svg' %}" rel="icon" type="image/svg+xml"/>
+<!-- Google Web Fonts -->
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500&amp;family=Roboto:wght@500;700;900&amp;display=swap" rel="stylesheet"/>
+<!-- Icon Font Stylesheet -->
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet"/>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet"/>
+<!-- Libraries Stylesheet -->
+<link href="{% static "lib/animate/animate.min.css" %}" rel="stylesheet"/>
+<link href="{% static "lib/owlcarousel/assets/owl.carousel.min.css" %}" rel="stylesheet"/>
+<link href="{% static "lib/lightbox/css/lightbox.min.css" %}" rel="stylesheet"/>
+<!-- Customized Bootstrap Stylesheet -->
+<link href="{% static "css/bootstrap.min.css" %}" rel="stylesheet"/>
+<!-- Template Stylesheet -->
+<link href="{% static "css/style.css" %}" rel="stylesheet"/>
+</head>
+<body>
+<!-- Spinner Start -->
+<div class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center" id="spinner">
+<div class="spinner-border text-primary" role="status" style="width: 3rem; height: 3rem;">
+<span class="sr-only">Loading...</span>
+</div>
+</div>
+<!-- Spinner End -->
+<!-- Topbar Start -->
+<div class="container-fluid bg-dark p-0">
+<div class="row gx-0 d-none d-lg-flex">
+<div class="col-lg-7 px-5 text-start">
+<div class="h-100 d-inline-flex align-items-center me-4">
+<small class="fa fa-map-marker-alt text-primary me-2"></small>
+<small>14 Bluewater Crescent, Lekki, Lagos</small>
+</div>
+<div class="h-100 d-inline-flex align-items-center">
+<small class="far fa-clock text-primary me-2"></small>
+<small>Mon – Sat: 8:00am – 6:00pm WAT</small>
+</div>
+</div>
+<div class="col-lg-5 px-5 text-end">
+<div class="h-100 d-inline-flex align-items-center me-4">
+<small class="fa fa-phone-alt text-primary me-2"></small>
+<small>+234 800 000 0000</small>
+</div>
+<div class="h-100 d-inline-flex align-items-center mx-n2">
+</div>
+<span class="topbar-location">🇳🇬 Nigerian power solutions, made for everyday life</span></div>
+</div>
+</div>
+<!-- Topbar End -->
+<!-- Navbar Start -->
+<nav class="navbar navbar-expand-lg bg-white navbar-light sticky-top p-0">
+<a class="navbar-brand d-flex align-items-center border-end px-4 px-lg-5" href="{% url 'home' %}"><span aria-hidden="true" class="brand-mark">◈</span><span class="brand-title">lagoon</span><span class="brand-suffix">SOLAR</span></a>
+<button class="navbar-toggler me-4" data-bs-target="#navbarCollapse" data-bs-toggle="collapse" type="button">
+<span class="navbar-toggler-icon"></span>
+</button>
+<div class="collapse navbar-collapse" id="navbarCollapse">
+<div class="navbar-nav ms-auto p-4 p-lg-0">
+<a class="nav-item nav-link {% if request.resolver_match.url_name == 'home' %}active{% endif %}" href="{% url 'home' %}">Home</a>
+<a class="nav-item nav-link {% if request.resolver_match.url_name == 'about' %}active{% endif %}" href="{% url 'about' %}">About</a>
+<a class="nav-item nav-link {% if request.resolver_match.url_name == 'service' %}active{% endif %}" href="{% url 'service' %}">Services</a>
+<a class="nav-item nav-link {% if request.resolver_match.url_name == 'project' %}active{% endif %}" href="{% url 'project' %}">Solutions</a>
+<div class="nav-item dropdown">
+<a class="nav-link dropdown-toggle {% if request.resolver_match.url_name == 'feature' or request.resolver_match.url_name == 'quote' or request.resolver_match.url_name == 'team' or request.resolver_match.url_name == 'testimonial' %}active{% endif %}" data-bs-toggle="dropdown" href="#">Explore</a>
+<div class="dropdown-menu bg-light m-0">
+<a class="dropdown-item" href="{% url 'feature' %}">Why Solar</a>
+<a class="dropdown-item" href="{% url 'quote' %}">Get a Quote</a>
+<a class="dropdown-item" href="{% url 'team' %}">How We Work</a>
+<a class="dropdown-item" href="{% url 'testimonial' %}">FAQs &amp; Guides</a>
+</div>
+</div>
+<a class="nav-item nav-link {% if request.resolver_match.url_name == 'contact' %}active{% endif %}" href="{% url 'contact' %}">Contact</a>
+</div>
+<a class="btn btn-primary rounded-0 py-4 px-lg-5 d-none d-lg-block" href="{% url 'quote' %}">Plan My Solar <i class="fa fa-arrow-right ms-3"></i></a>
+</div>
+</nav>
+<!-- Navbar End -->
+
+{% block content %}{% endblock %}
+
+<!-- Footer Start -->
+<div class="container-fluid bg-dark text-body footer mt-5 pt-5 wow fadeIn" data-wow-delay="0.1s">
+<div class="container py-5">
+<div class="row g-5">
+<div class="col-lg-3 col-md-6">
+<h5 class="text-white mb-4">Address</h5>
+<p class="mb-2">14 Bluewater Crescent, Lekki Phase 1, Lagos, Nigeria</p>
+<p class="mb-2">+234 800 000 0000</p>
+<p class="mb-2">hello@lagoonsolar.example</p>
+<div class="d-flex pt-2"><span class="footer-location-pill">Proudly Nigerian 🇳🇬</span></div>
+</div>
+<div class="col-lg-3 col-md-6">
+<h5 class="text-white mb-4">Quick Links</h5>
+<a class="btn btn-link" href="{% url 'about' %}">Our Story</a>
+<a class="btn btn-link" href="{% url 'contact' %}">Get in Touch</a>
+<a class="btn btn-link" href="{% url 'service' %}">Solar Services</a>
+<a class="btn btn-link" href="{% url 'project' %}">Solar Solutions</a>
+<a class="btn btn-link" href="{% url 'testimonial' %}">Help &amp; FAQs</a>
+</div>
+<div class="col-lg-3 col-md-6">
+<h5 class="text-white mb-4">Solar in Nigeria</h5>
+<div class="row g-2">
+<div class="col-4">
+<img alt="Solar energy in Nigeria — illustrative gallery image" class="img-fluid rounded" data-local-fallback="img/gallery-1.jpg" decoding="async" loading="lazy" src="https://commons.wikimedia.org/wiki/Special:FilePath/Wavetra_solar_installation.jpg?width=1280"/>
+</div>
+<div class="col-4">
+<img alt="Solar energy in Nigeria — illustrative gallery image" class="img-fluid rounded" data-local-fallback="img/gallery-2.jpg" decoding="async" loading="lazy" src="https://commons.wikimedia.org/wiki/Special:FilePath/Solar-panel-on-the-roof-of-an-ancient-house-in-abeokuta.jpg?width=1280"/>
+</div>
+<div class="col-4">
+<img alt="Solar energy in Nigeria — illustrative gallery image" class="img-fluid rounded" data-local-fallback="img/gallery-3.jpg" decoding="async" loading="lazy" src="https://commons.wikimedia.org/wiki/Special:FilePath/Sun_empowers_solar_panels.jpg?width=1280"/>
+</div>
+<div class="col-4">
+<img alt="Solar energy in Nigeria — illustrative gallery image" class="img-fluid rounded" data-local-fallback="img/gallery-4.jpg" decoding="async" loading="lazy" src="https://commons.wikimedia.org/wiki/Special:FilePath/Solar_Pannel_Installer.jpg?width=1280"/>
+</div>
+<div class="col-4">
+<img alt="Solar energy in Nigeria — illustrative gallery image" class="img-fluid rounded" data-local-fallback="img/gallery-5.jpg" decoding="async" loading="lazy" src="https://commons.wikimedia.org/wiki/Special:FilePath/Lights%2C_Solar_Panels_and_Vegetation_and_National_Theatre.jpg?width=1280"/>
+</div>
+<div class="col-4">
+<img alt="Solar energy in Nigeria — illustrative gallery image" class="img-fluid rounded" data-local-fallback="img/gallery-6.jpg" decoding="async" loading="lazy" src="https://commons.wikimedia.org/wiki/Special:FilePath/Solar_panels_in_Kwara_state_university.jpg?width=1280"/>
+</div>
+</div>
+</div>
+<div class="col-lg-3 col-md-6">
+<h5 class="text-white mb-4">Where We Serve</h5>
+<p>Lagos · Ogun · Ibadan · Abuja · Port Harcourt</p><p class="small">Start with a quick power-needs assessment and explore a setup that works for your space.</p><a class="btn btn-primary rounded-pill py-2 px-4 mt-2" href="{% url 'quote' %}">Plan Your Solar</a></div>
+</div>
+</div>
+<div class="container">
+<div class="copyright">
+<div class="row">
+<div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
+                        © <a href="{% url 'home' %}">Lagoon Solar</a>, All Right Reserved.
+                    </div>
+<div class="col-md-6 text-center text-md-end">
+<!--/*** This template is free as long as you keep the footer author’s credit link/attribution link/backlink. If you'd like to use the template without the footer author’s credit link/attribution link/backlink, you can purchase the Credit Removal License from "https://htmlcodex.com/credit-removal". Thank you for your support. ***/-->
+                        Designed By <a href="https://htmlcodex.com">HTML Codex</a>
+<br/>Distributed By: <a href="https://themewagon.com" target="_blank">ThemeWagon</a>
+</div>
+</div>
+<p class="small text-center opacity-75 mt-3 mb-0">Concept/demo business. Contact details, address and example solutions are fictional; photographs are illustrative. <a href="{% url 'PHOTOCREDIT' %}">Photo credits</a></p></div>
+</div>
+</div>
+<!-- Footer End -->
+<!-- Back to Top -->
+<a class="btn btn-lg btn-primary btn-lg-square rounded-circle back-to-top" href="#"><i class="bi bi-arrow-up"></i></a>
+<!-- JavaScript Libraries -->
+<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+<script src="{% static "lib/wow/wow.min.js" %}"></script>
+<script src="{% static "lib/easing/easing.min.js" %}"></script>
+<script src="{% static "lib/waypoints/waypoints.min.js" %}"></script>
+<script src="{% static "lib/counterup/counterup.min.js" %}"></script>
+<script src="{% static "lib/owlcarousel/owl.carousel.min.js" %}"></script>
+<script src="{% static "lib/isotope/isotope.pkgd.min.js" %}"></script>
+<script src="{% static "lib/lightbox/js/lightbox.min.js" %}"></script>
+<!-- Template Javascript -->
+<script src="{% static "js/main.js" %}"></script>
+<script src="{% static "js/lagoon.js" %}"></script></body>
+</html>

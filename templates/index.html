@@ -1,0 +1,514 @@
+{% extends "base.html" %}
+
+{% load static %}
+
+{% block content %}
+<!-- Carousel Start -->
+<div class="container-fluid p-0 pb-5 wow fadeIn" data-wow-delay="0.1s">
+<div class="owl-carousel header-carousel position-relative">
+<div class="owl-carousel-item position-relative" data-dot="&lt;span&gt;01&lt;/span&gt;">
+<img alt="Solar energy in Nigeria: Let the grid go off. Your life stays on." class="img-fluid" data-local-fallback="img/carousel-1.jpg" decoding="async" src="https://commons.wikimedia.org/wiki/Special:FilePath/Solar_panel_installer.jpg?width=1280"/>
+<div class="owl-carousel-inner">
+<div class="container">
+<div class="row justify-content-start">
+<div class="col-10 col-lg-8">
+<h1 class="display-2 text-white animated slideInDown">Let the grid go off. Your life stays on.</h1>
+<p class="fs-5 fw-medium text-white mb-4 pb-3">Thoughtful solar, inverter and battery solutions for Nigerian homes. Less generator stress, more everyday comfort.</p>
+<a class="btn btn-primary rounded-pill py-3 px-5 animated slideInLeft" href="{% url 'quote' %}">Get My Solar Plan</a>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="owl-carousel-item position-relative" data-dot="&lt;span&gt;02&lt;/span&gt;">
+<img alt="Solar energy in Nigeria: Less fuel. More time to live." class="img-fluid" data-local-fallback="img/carousel-2.jpg" decoding="async" src="https://commons.wikimedia.org/wiki/Special:FilePath/Wavetra_solar_installation.jpg?width=1280"/>
+<div class="owl-carousel-inner">
+<div class="container">
+<div class="row justify-content-start">
+<div class="col-10 col-lg-8">
+<h1 class="display-2 text-white animated slideInDown">Less fuel. More time to live.</h1>
+<p class="fs-5 fw-medium text-white mb-4 pb-3">Keep your shop, office or small business moving with backup power planned around what matters most.</p>
+<a class="btn btn-primary rounded-pill py-3 px-5 animated slideInLeft" href="{% url 'quote' %}">Power My Business</a>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="owl-carousel-item position-relative" data-dot="&lt;span&gt;03&lt;/span&gt;">
+<img alt="Solar energy in Nigeria: Made for the Nigerian power reality." class="img-fluid" data-local-fallback="img/carousel-3.jpg" decoding="async" src="https://commons.wikimedia.org/wiki/Special:FilePath/Sun_empowers_solar_panels.jpg?width=1280"/>
+<div class="owl-carousel-inner">
+<div class="container">
+<div class="row justify-content-start">
+<div class="col-10 col-lg-8">
+<h1 class="display-2 text-white animated slideInDown">Made for the Nigerian power reality.</h1>
+<p class="fs-5 fw-medium text-white mb-4 pb-3">From everyday essentials to bigger loads, discover a solar plan with your budget and lifestyle in mind.</p>
+<a class="btn btn-primary rounded-pill py-3 px-5 animated slideInLeft" href="{% url 'quote' %}">Get My Solar Plan</a>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div><div class="lagoon-trustbar"><div class="container d-flex justify-content-center flex-wrap gap-4"><span><i class="fas fa-map-marker-alt"></i> Lagos-based</span><span><i class="fas fa-bolt"></i> Built for everyday outages</span><span><i class="fas fa-solar-panel"></i> Solar + inverter + storage</span><span><i class="fas fa-comments"></i> Clear, practical guidance</span></div></div>
+<!-- Carousel End -->
+<!-- Feature Start -->
+<div class="container-xxl py-5">
+<div class="container">
+<div class="row g-5">
+<div class="col-md-6 col-lg-3 wow fadeIn process-step" data-wow-delay="0.1s">
+<div class="d-flex align-items-center mb-4">
+<div class="btn-lg-square bg-primary rounded-circle me-3">
+<i class="fa fa-users text-white"></i>
+</div>
+<h1 class="mb-0">01</h1>
+</div>
+<h5 class="mb-3">Tell us your needs</h5>
+<span>Share your appliances, location and power priorities.</span>
+</div>
+<div class="col-md-6 col-lg-3 wow fadeIn process-step" data-wow-delay="0.3s">
+<div class="d-flex align-items-center mb-4">
+<div class="btn-lg-square bg-primary rounded-circle me-3">
+<i class="fa fa-check text-white"></i>
+</div>
+<h1 class="mb-0">02</h1>
+</div>
+<h5 class="mb-3">Get your load plan</h5>
+<span>We map your power usage to suitable system options.</span>
+</div>
+<div class="col-md-6 col-lg-3 wow fadeIn process-step" data-wow-delay="0.5s">
+<div class="d-flex align-items-center mb-4">
+<div class="btn-lg-square bg-primary rounded-circle me-3">
+<i class="fa fa-award text-white"></i>
+</div>
+<h1 class="mb-0">03</h1>
+</div>
+<h5 class="mb-3">Plan the installation</h5>
+<span>Review a rooftop and equipment layout for your space.</span>
+</div>
+<div class="col-md-6 col-lg-3 wow fadeIn process-step" data-wow-delay="0.7s">
+<div class="d-flex align-items-center mb-4">
+<div class="btn-lg-square bg-primary rounded-circle me-3">
+<i class="fa fa-users-cog text-white"></i>
+</div>
+<h1 class="mb-0">04</h1>
+</div>
+<h5 class="mb-3">Stay supported</h5>
+<span>Get guidance on battery use and routine care.</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Feature Start -->
+<!-- About Start -->
+<div class="container-fluid bg-light overflow-hidden my-5 px-lg-0">
+<div class="container about px-lg-0">
+<div class="row g-0 mx-lg-0">
+<div class="col-lg-6 ps-lg-0 wow fadeIn" data-wow-delay="0.1s" style="min-height: 400px;">
+<div class="position-relative h-100">
+<img alt="Solar technicians mounting panels on a Nigerian rooftop; illustrative photo" class="position-absolute img-fluid w-100 h-100" data-local-fallback="img/about.jpg" decoding="async" loading="lazy" src="https://commons.wikimedia.org/wiki/Special:FilePath/Wavetra_solar_installation.jpg?width=1280" style="object-fit: cover;"/>
+</div>
+</div>
+<div class="col-lg-6 about-text py-5 wow fadeIn" data-wow-delay="0.5s">
+<div class="p-lg-5 pe-lg-0">
+<h6 class="text-primary">Meet Lagoon Solar</h6>
+<h1 class="mb-4">Power that fits how Nigeria really lives</h1>
+<p>From Lagos homes to busy business spaces, we help you plan dependable solar and inverter power around your daily routine—not guesswork or one-size-fits-all packages.</p>
+<p><i class="fa fa-check-circle text-primary me-3"></i>Advice based on appliances you actually use</p>
+<p><i class="fa fa-check-circle text-primary me-3"></i>Solar, inverter and lithium storage options</p>
+<p><i class="fa fa-check-circle text-primary me-3"></i>Straightforward steps, from survey to support</p>
+<a class="btn btn-primary rounded-pill py-3 px-5 mt-3" href="{% url 'about' %}">Discover Our Approach</a>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- About End -->
+<!-- Service Start -->
+<div class="container-xxl py-5">
+<div class="container">
+<div class="text-center mx-auto mb-5 wow fadeInUp" data-wow-delay="0.1s" style="max-width: 600px;">
+<h6 class="text-primary">What We Do</h6>
+<h1 class="mb-4">A better power plan for every kind of space</h1>
+</div>
+<div class="row g-4">
+<div class="col-md-6 col-lg-4 wow fadeInUp" data-wow-delay="0.1s">
+<div class="service-item rounded overflow-hidden">
+<img alt="Residential Solar – illustrative solar power photography" class="img-fluid" data-local-fallback="img/img-600x400-1.jpg" decoding="async" loading="lazy" src="https://commons.wikimedia.org/wiki/Special:FilePath/Wavetra_solar_installation.jpg?width=1280"/>
+<div class="position-relative p-4 pt-0">
+<div class="service-icon">
+<i class="fa fa-home fa-3x"></i>
+</div>
+<h4 class="mb-3">Residential Solar</h4>
+<p>A tailored solar-and-inverter setup for your flat, duplex or family home. Keep essential appliances running when the grid goes out.</p>
+<a class="small fw-medium" href="{% url 'quote' %}">Discuss this service <i class="fa fa-arrow-right ms-2"></i></a>
+</div>
+</div>
+</div>
+<div class="col-md-6 col-lg-4 wow fadeInUp" data-wow-delay="0.3s">
+<div class="service-item rounded overflow-hidden">
+<img alt="Inverter &amp; Backup Power – illustrative solar power photography" class="img-fluid" data-local-fallback="img/img-600x400-2.jpg" decoding="async" loading="lazy" src="https://commons.wikimedia.org/wiki/Special:FilePath/Sun_empowers_solar_panels.jpg?width=1280"/>
+<div class="position-relative p-4 pt-0">
+<div class="service-icon">
+<i class="fa fa-bolt fa-3x"></i>
+</div>
+<h4 class="mb-3">Inverter &amp; Backup Power</h4>
+<p>Quiet backup systems sized around your actual electricity use, from lights and Wi-Fi to TVs, freezers and workstations.</p>
+<a class="small fw-medium" href="{% url 'quote' %}">Discuss this service <i class="fa fa-arrow-right ms-2"></i></a>
+</div>
+</div>
+</div>
+<div class="col-md-6 col-lg-4 wow fadeInUp" data-wow-delay="0.5s">
+<div class="service-item rounded overflow-hidden">
+<img alt="Lithium Battery Upgrades – illustrative solar power photography" class="img-fluid" data-local-fallback="img/img-600x400-3.jpg" decoding="async" loading="lazy" src="https://commons.wikimedia.org/wiki/Special:FilePath/Solar_Pannel_Installer.jpg?width=1280"/>
+<div class="position-relative p-4 pt-0">
+<div class="service-icon">
+<i class="fa fa-battery-full fa-3x"></i>
+</div>
+<h4 class="mb-3">Lithium Battery Upgrades</h4>
+<p>Make more of your stored energy with battery choices designed around runtime, safety and future expansion.</p>
+<a class="small fw-medium" href="{% url 'quote' %}">Discuss this service <i class="fa fa-arrow-right ms-2"></i></a>
+</div>
+</div>
+</div>
+<div class="col-md-6 col-lg-4 wow fadeInUp" data-wow-delay="0.1s">
+<div class="service-item rounded overflow-hidden">
+<img alt="Solar for Shops &amp; SMEs – illustrative solar power photography" class="img-fluid" data-local-fallback="img/img-600x400-4.jpg" decoding="async" loading="lazy" src="https://commons.wikimedia.org/wiki/Special:FilePath/Solar-panel-on-the-roof-of-an-ancient-house-in-abeokuta.jpg?width=1280"/>
+<div class="position-relative p-4 pt-0">
+<div class="service-icon">
+<i class="fa fa-store fa-3x"></i>
+</div>
+<h4 class="mb-3">Solar for Shops &amp; SMEs</h4>
+<p>Better power continuity for salons, retail shops, pharmacies, offices and other growing Nigerian businesses.</p>
+<a class="small fw-medium" href="{% url 'quote' %}">Discuss this service <i class="fa fa-arrow-right ms-2"></i></a>
+</div>
+</div>
+</div>
+<div class="col-md-6 col-lg-4 wow fadeInUp" data-wow-delay="0.3s">
+<div class="service-item rounded overflow-hidden">
+<img alt="System Maintenance – illustrative solar power photography" class="img-fluid" data-local-fallback="img/img-600x400-5.jpg" decoding="async" loading="lazy" src="https://commons.wikimedia.org/wiki/Special:FilePath/Solar_panel_installer.jpg?width=1280"/>
+<div class="position-relative p-4 pt-0">
+<div class="service-icon">
+<i class="fa fa-tools fa-3x"></i>
+</div>
+<h4 class="mb-3">System Maintenance</h4>
+<p>Panel cleaning guidance, inspections, fault checks and performance reviews to keep your system in good shape.</p>
+<a class="small fw-medium" href="{% url 'quote' %}">Discuss this service <i class="fa fa-arrow-right ms-2"></i></a>
+</div>
+</div>
+</div>
+<div class="col-md-6 col-lg-4 wow fadeInUp" data-wow-delay="0.5s">
+<div class="service-item rounded overflow-hidden">
+<img alt="Load Assessment &amp; Design – illustrative solar power photography" class="img-fluid" data-local-fallback="img/img-600x400-6.jpg" decoding="async" loading="lazy" src="https://commons.wikimedia.org/wiki/Special:FilePath/Solar_panels_in_Kwara_state_university.jpg?width=1280"/>
+<div class="position-relative p-4 pt-0">
+<div class="service-icon">
+<i class="fa fa-clipboard-check fa-3x"></i>
+</div>
+<h4 class="mb-3">Load Assessment &amp; Design</h4>
+<p>Understand what you can power, how long it can run and what system size fits your budget before you buy.</p>
+<a class="small fw-medium" href="{% url 'quote' %}">Discuss this service <i class="fa fa-arrow-right ms-2"></i></a>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Service End -->
+<!-- Feature Start -->
+<div class="container-fluid bg-light overflow-hidden my-5 px-lg-0">
+<div class="container feature px-lg-0">
+<div class="row g-0 mx-lg-0">
+<div class="col-lg-6 feature-text py-5 wow fadeIn" data-wow-delay="0.1s">
+<div class="p-lg-5 ps-lg-0">
+<h6 class="text-primary">The Lagoon Approach</h6>
+<h1 class="mb-4">Reliable energy starts with the right questions</h1>
+<p class="mb-4 pb-2">We design around the realities of Nigerian electricity: unexpected outages, rising generator fuel costs, hot weather and the appliances your household or business cannot do without.</p>
+<div class="row g-4">
+<div class="col-6">
+<div class="d-flex align-items-center">
+<div class="btn-lg-square bg-primary rounded-circle">
+<i class="fa fa-check text-white"></i>
+</div>
+<div class="ms-4">
+<p class="mb-0">Realistic</p>
+<h5 class="mb-0">Load Planning</h5>
+</div>
+</div>
+</div>
+<div class="col-6">
+<div class="d-flex align-items-center">
+<div class="btn-lg-square bg-primary rounded-circle">
+<i class="fa fa-user-check text-white"></i>
+</div>
+<div class="ms-4">
+<p class="mb-0">Smart</p>
+<h5 class="mb-0">Equipment Choices</h5>
+</div>
+</div>
+</div>
+<div class="col-6">
+<div class="d-flex align-items-center">
+<div class="btn-lg-square bg-primary rounded-circle">
+<i class="fa fa-drafting-compass text-white"></i>
+</div>
+<div class="ms-4">
+<p class="mb-0">Clear</p>
+<h5 class="mb-0">Cost Breakdown</h5>
+</div>
+</div>
+</div>
+<div class="col-6">
+<div class="d-flex align-items-center">
+<div class="btn-lg-square bg-primary rounded-circle">
+<i class="fa fa-headphones text-white"></i>
+</div>
+<div class="ms-4">
+<p class="mb-0">Helpful</p>
+<h5 class="mb-0">Aftercare</h5>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="col-lg-6 pe-lg-0 wow fadeIn" data-wow-delay="0.5s" style="min-height: 400px;">
+<div class="position-relative h-100">
+<img alt="Solar installer on a Nigerian roof; illustrative photo" class="position-absolute img-fluid w-100 h-100" data-local-fallback="img/feature.jpg" decoding="async" loading="lazy" src="https://commons.wikimedia.org/wiki/Special:FilePath/Solar_Pannel_Installer.jpg?width=1280" style="object-fit: cover;"/>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Feature End -->
+<!-- Projects Start -->
+<div class="container-xxl py-5">
+<div class="container">
+<div class="text-center mx-auto mb-5 wow fadeInUp" data-wow-delay="0.1s" style="max-width: 600px;">
+<h6 class="text-primary">Explore the Possibilities</h6>
+<h1 class="mb-4">Solar ideas for Nigerian homes and businesses</h1>
+</div><p class="text-center text-muted mx-auto project-disclaimer" style="max-width:720px">Illustrative system examples and independent photography—not completed Lagoon Solar customer projects.</p>
+<div class="row mt-n2 wow fadeInUp" data-wow-delay="0.3s">
+<div class="col-12 text-center">
+<ul class="list-inline mb-5" id="portfolio-flters">
+<li class="mx-2 active" data-filter="*">All Solutions</li>
+<li class="mx-2" data-filter=".first">Home Solar</li>
+<li class="mx-2" data-filter=".second">Business Backup</li>
+<li class="mx-2" data-filter=".third">Inverters &amp; Batteries</li>
+</ul>
+</div>
+</div>
+<div class="row g-4 portfolio-container wow fadeInUp" data-wow-delay="0.5s">
+<div class="col-lg-4 col-md-6 portfolio-item first">
+<div class="portfolio-img rounded overflow-hidden">
+<img alt="Duplex-ready rooftop solar; illustrative photography" class="img-fluid" data-local-fallback="img/img-600x400-6.jpg" decoding="async" loading="lazy" src="https://commons.wikimedia.org/wiki/Special:FilePath/Solar-panel-on-the-roof-of-an-ancient-house-in-abeokuta.jpg?width=1280"/>
+<div class="portfolio-btn">
+<a aria-label="Enlarge example photo" class="btn btn-lg-square btn-outline-light rounded-circle mx-1" data-lightbox="portfolio" href="https://commons.wikimedia.org/wiki/Special:FilePath/Solar-panel-on-the-roof-of-an-ancient-house-in-abeokuta.jpg?width=1800"><i class="fa fa-eye"></i></a>
+<a aria-label="Enquire about Duplex-ready rooftop solar" class="btn btn-lg-square btn-outline-light rounded-circle mx-1" href="{% url 'quote' %}"><i class="fa fa-link"></i></a>
+</div>
+</div>
+<div class="pt-3">
+<p class="text-primary mb-0">Home Solar</p>
+<hr class="text-primary w-25 my-2"/>
+<h5 class="lh-base">Duplex-ready rooftop solar</h5><p class="small text-muted mt-2 mb-0">A practical rooftop layout for a Lagos family home.</p>
+</div>
+</div>
+<div class="col-lg-4 col-md-6 portfolio-item second">
+<div class="portfolio-img rounded overflow-hidden">
+<img alt="Reliable backup for a busy shop; illustrative photography" class="img-fluid" data-local-fallback="img/img-600x400-5.jpg" decoding="async" loading="lazy" src="https://commons.wikimedia.org/wiki/Special:FilePath/Wavetra_solar_installation.jpg?width=1280"/>
+<div class="portfolio-btn">
+<a aria-label="Enlarge example photo" class="btn btn-lg-square btn-outline-light rounded-circle mx-1" data-lightbox="portfolio" href="https://commons.wikimedia.org/wiki/Special:FilePath/Wavetra_solar_installation.jpg?width=1800"><i class="fa fa-eye"></i></a>
+<a aria-label="Enquire about Reliable backup for a busy shop" class="btn btn-lg-square btn-outline-light rounded-circle mx-1" href="{% url 'quote' %}"><i class="fa fa-link"></i></a>
+</div>
+</div>
+<div class="pt-3">
+<p class="text-primary mb-0">Business Backup</p>
+<hr class="text-primary w-25 my-2"/>
+<h5 class="lh-base">Reliable backup for a busy shop</h5><p class="small text-muted mt-2 mb-0">Keep POS, lights and essential work equipment ready.</p>
+</div>
+</div>
+<div class="col-lg-4 col-md-6 portfolio-item first">
+<div class="portfolio-img rounded overflow-hidden">
+<img alt="Compact home solar starter; illustrative photography" class="img-fluid" data-local-fallback="img/img-600x400-4.jpg" decoding="async" loading="lazy" src="https://commons.wikimedia.org/wiki/Special:FilePath/Sun_empowers_solar_panels.jpg?width=1280"/>
+<div class="portfolio-btn">
+<a aria-label="Enlarge example photo" class="btn btn-lg-square btn-outline-light rounded-circle mx-1" data-lightbox="portfolio" href="https://commons.wikimedia.org/wiki/Special:FilePath/Sun_empowers_solar_panels.jpg?width=1800"><i class="fa fa-eye"></i></a>
+<a aria-label="Enquire about Compact home solar starter" class="btn btn-lg-square btn-outline-light rounded-circle mx-1" href="{% url 'quote' %}"><i class="fa fa-link"></i></a>
+</div>
+</div>
+<div class="pt-3">
+<p class="text-primary mb-0">Home Solar</p>
+<hr class="text-primary w-25 my-2"/>
+<h5 class="lh-base">Compact home solar starter</h5><p class="small text-muted mt-2 mb-0">A considered entry point for everyday essentials.</p>
+</div>
+</div>
+<div class="col-lg-4 col-md-6 portfolio-item third">
+<div class="portfolio-img rounded overflow-hidden">
+<img alt="Inverter plus lithium storage; illustrative photography" class="img-fluid" data-local-fallback="img/img-600x400-3.jpg" decoding="async" loading="lazy" src="https://commons.wikimedia.org/wiki/Special:FilePath/Solar_Pannel_Installer.jpg?width=1280"/>
+<div class="portfolio-btn">
+<a aria-label="Enlarge example photo" class="btn btn-lg-square btn-outline-light rounded-circle mx-1" data-lightbox="portfolio" href="https://commons.wikimedia.org/wiki/Special:FilePath/Solar_Pannel_Installer.jpg?width=1800"><i class="fa fa-eye"></i></a>
+<a aria-label="Enquire about Inverter plus lithium storage" class="btn btn-lg-square btn-outline-light rounded-circle mx-1" href="{% url 'quote' %}"><i class="fa fa-link"></i></a>
+</div>
+</div>
+<div class="pt-3">
+<p class="text-primary mb-0">Battery &amp; Inverter</p>
+<hr class="text-primary w-25 my-2"/>
+<h5 class="lh-base">Inverter plus lithium storage</h5><p class="small text-muted mt-2 mb-0">Storage options to keep evenings comfortable.</p>
+</div>
+</div>
+<div class="col-lg-4 col-md-6 portfolio-item second">
+<div class="portfolio-img rounded overflow-hidden">
+<img alt="Office power continuity; illustrative photography" class="img-fluid" data-local-fallback="img/img-600x400-2.jpg" decoding="async" loading="lazy" src="https://commons.wikimedia.org/wiki/Special:FilePath/Lights%2C_Solar_Panels_and_Vegetation_and_National_Theatre.jpg?width=1280"/>
+<div class="portfolio-btn">
+<a aria-label="Enlarge example photo" class="btn btn-lg-square btn-outline-light rounded-circle mx-1" data-lightbox="portfolio" href="https://commons.wikimedia.org/wiki/Special:FilePath/Lights%2C_Solar_Panels_and_Vegetation_and_National_Theatre.jpg?width=1800"><i class="fa fa-eye"></i></a>
+<a aria-label="Enquire about Office power continuity" class="btn btn-lg-square btn-outline-light rounded-circle mx-1" href="{% url 'quote' %}"><i class="fa fa-link"></i></a>
+</div>
+</div>
+<div class="pt-3">
+<p class="text-primary mb-0">Business Backup</p>
+<hr class="text-primary w-25 my-2"/>
+<h5 class="lh-base">Office power continuity</h5><p class="small text-muted mt-2 mb-0">Protect work hours during unexpected outages.</p>
+</div>
+</div>
+<div class="col-lg-4 col-md-6 portfolio-item third">
+<div class="portfolio-img rounded overflow-hidden">
+<img alt="Smart energy planning; illustrative photography" class="img-fluid" data-local-fallback="img/img-600x400-1.jpg" decoding="async" loading="lazy" src="https://commons.wikimedia.org/wiki/Special:FilePath/Solar_panels_in_Kwara_state_university.jpg?width=1280"/>
+<div class="portfolio-btn">
+<a aria-label="Enlarge example photo" class="btn btn-lg-square btn-outline-light rounded-circle mx-1" data-lightbox="portfolio" href="https://commons.wikimedia.org/wiki/Special:FilePath/Solar_panels_in_Kwara_state_university.jpg?width=1800"><i class="fa fa-eye"></i></a>
+<a aria-label="Enquire about Smart energy planning" class="btn btn-lg-square btn-outline-light rounded-circle mx-1" href="{% url 'quote' %}"><i class="fa fa-link"></i></a>
+</div>
+</div>
+<div class="pt-3">
+<p class="text-primary mb-0">Battery &amp; Inverter</p>
+<hr class="text-primary w-25 my-2"/>
+<h5 class="lh-base">Smart energy planning</h5><p class="small text-muted mt-2 mb-0">Match real power use with suitable equipment.</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Projects End -->
+<!-- Quote Start -->
+<div class="container-fluid bg-light overflow-hidden my-5 px-lg-0">
+<div class="container quote px-lg-0">
+<div class="row g-0 mx-lg-0">
+<div class="col-lg-6 ps-lg-0 wow fadeIn" data-wow-delay="0.1s" style="min-height: 400px;">
+<div class="position-relative h-100">
+<img alt="Rooftop solar panels on a Nigerian home" class="position-absolute img-fluid w-100 h-100" data-local-fallback="img/quote.jpg" decoding="async" loading="lazy" src="https://commons.wikimedia.org/wiki/Special:FilePath/Sun_empowers_solar_panels.jpg?width=1280" style="object-fit: cover;"/>
+</div>
+</div>
+<div class="col-lg-6 quote-text py-5 wow fadeIn" data-wow-delay="0.5s">
+<div class="p-lg-5 pe-lg-0">
+<h6 class="text-primary">Request a Solar Plan</h6>
+<h1 class="mb-4">Let’s build a power plan around your budget</h1>
+<p class="mb-4 pb-2">Tell us your location and what you need to power. We’ll help you outline a sensible solar, inverter or battery setup—without confusing jargon.</p>
+<form class="solar-request-form" data-demo-form="quote" method="post">
+<div class="row g-3">
+<div class="col-12 col-sm-6">
+<input autocomplete="name" class="form-control border-0" name="name" placeholder="Your Name" required="required" style="height: 55px;" type="text"/>
+</div>
+<div class="col-12 col-sm-6">
+<input autocomplete="email" class="form-control border-0" name="email" placeholder="Your Email" required="required" style="height: 55px;" type="email"/>
+</div>
+<div class="col-12 col-sm-6">
+<input autocomplete="tel" class="form-control border-0" name="phone" placeholder="Phone (e.g. 080...)" required="required" style="height: 55px;" type="tel"/>
+</div>
+<div class="col-12 col-sm-6">
+<select class="form-select border-0" name="service" required="required" style="height: 55px;"><option disabled="disabled" selected="selected" value="">Select a service</option><option value="Home solar">Home solar installation</option><option value="Inverter">Inverter &amp; backup power</option><option value="Battery">Lithium battery upgrade</option><option value="Business">Business solar</option><option value="Maintenance">Maintenance</option><option value="Assessment">Load assessment</option></select>
+</div>
+<div class="col-12">
+<textarea class="form-control border-0" name="message" placeholder="Tell us the appliances and number of hours you need power" rows="4"></textarea>
+</div>
+<div class="col-12">
+<button class="btn btn-primary rounded-pill py-3 px-5" type="submit">Prepare Enquiry</button>
+</div>
+</div>
+<p aria-live="polite" class="form-feedback small mt-3" role="status">Demo: opens an email draft; replace the sample contact details before publishing.</p></form>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Quote End -->
+<!-- Team Start -->
+<div class="container-xxl py-5">
+<div class="container">
+<div class="text-center mx-auto mb-5 wow fadeInUp" data-wow-delay="0.1s" style="max-width: 600px;">
+<h6 class="text-primary">How We Work</h6>
+<h1 class="mb-4">Clear steps. Thoughtful decisions. Better power.</h1>
+</div>
+<div class="row g-4">
+<div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+<div class="team-item rounded overflow-hidden">
+<div class="d-flex">
+<img alt="Illustrative Nigerian solar installation photography" class="img-fluid w-75" data-local-fallback="img/team-1.jpg" decoding="async" loading="lazy" src="https://commons.wikimedia.org/wiki/Special:FilePath/Wavetra_solar_installation.jpg?width=1280"/>
+<div class="team-social w-25"><span class="team-number">01</span></div>
+</div>
+<div class="p-4">
+<h5>Power consultation</h5>
+<span>Tell us about your home or business</span>
+</div>
+</div>
+</div>
+<div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
+<div class="team-item rounded overflow-hidden">
+<div class="d-flex">
+<img alt="Illustrative Nigerian solar installation photography" class="img-fluid w-75" data-local-fallback="img/team-2.jpg" decoding="async" loading="lazy" src="https://commons.wikimedia.org/wiki/Special:FilePath/Solar_panel_installer.jpg?width=1280"/>
+<div class="team-social w-25"><span class="team-number">02</span></div>
+</div>
+<div class="p-4">
+<h5>System planning</h5>
+<span>Review your appliances and backup needs</span>
+</div>
+</div>
+</div>
+<div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
+<div class="team-item rounded overflow-hidden">
+<div class="d-flex">
+<img alt="Illustrative Nigerian solar installation photography" class="img-fluid w-75" data-local-fallback="img/team-3.jpg" decoding="async" loading="lazy" src="https://commons.wikimedia.org/wiki/Special:FilePath/Solar_Pannel_Installer.jpg?width=1280"/>
+<div class="team-social w-25"><span class="team-number">03</span></div>
+</div>
+<div class="p-4">
+<h5>Installation &amp; care</h5>
+<span>Understand commissioning and ongoing upkeep</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Team End -->
+<!-- Testimonial Start -->
+<div class="container-xxl py-5">
+<div class="container">
+<div class="text-center mx-auto mb-5 wow fadeInUp" data-wow-delay="0.1s" style="max-width: 600px;">
+<h6 class="text-primary">Power Planning FAQs</h6>
+<h1 class="mb-4">The questions worth asking before you buy</h1>
+</div>
+<div class="owl-carousel testimonial-carousel wow fadeInUp" data-wow-delay="0.1s">
+{% for item in questions %}
+<div class="testimonial-item text-center">
+<div class="testimonial-img position-relative">
+{% if item.photo %}
+<img alt="{{ item.question }}" class="img-fluid rounded-circle mx-auto mb-5" src="{{ item.photo.url }}" style="object-fit: cover; object-position: top;"/>
+{% else %}
+<img alt="{{ item.question }}" class="img-fluid rounded-circle mx-auto mb-5" src="{% static 'img/testimonial-1.jpg' %}"/>
+{% endif %}
+<div class="btn-square bg-primary rounded-circle">
+<i class="fa fa-quote-left text-white"></i>
+</div>
+</div>
+<div class="testimonial-text text-center rounded p-4">
+<p>{{ item.message|linebreaksbr }}</p>
+<h5 class="mb-1">{{ item.question }}</h5>
+{% if item.Subtitle %}
+<span class="fst-italic">{{ item.Subtitle }}</span>
+{% endif %}
+</div>
+</div>
+{% empty %}
+{% endfor %}
+</div>
+</div>
+</div>
+<!-- Testimonial End -->
+{% endblock %}
+
+
