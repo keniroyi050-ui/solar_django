@@ -97,7 +97,6 @@ STATICFILES_DIRS = [BASE_DIR / "static"]
 
 # This is where collectstatic will dump all files for Whitenoise to serve in production
 STATIC_ROOT = BASE_DIR / "staticfiles"
-
 # Turn on Whitenoise storage compression and caching support
 if not DEBUG:
     STORAGES = {
@@ -105,6 +104,8 @@ if not DEBUG:
             "BACKEND": "whitenoise.storage.CompressedManifestStaticFilesStorage",
         },
     }
+    # ADD THIS LINE TO PREVENT MISSING MAP FILES FROM CRASHING THE BUILD
+    WHITENOISE_MANIFEST_STRICT = False
 
 # Media Files
 MEDIA_URL = '/media/'
